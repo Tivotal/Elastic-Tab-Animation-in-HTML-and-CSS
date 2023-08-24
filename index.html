@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Created by Tivotal-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elastic Tab Animation</title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <input type="radio" name="tab" id="home" checked />
+        <input type="radio" name="tab" id="search" />
+        <input type="radio" name="tab" id="add" />
+        <input type="radio" name="tab" id="notification" />
+        <input type="radio" name="tab" id="profile" />
+
+        <label for="home" class="home">
+          <a href="#"><i class="fas fa-house"></i>Home</a>
+        </label>
+        <label for="search" class="search">
+          <a href="#"><i class="fas fa-magnifying-glass"></i>Search</a>
+        </label>
+        <label for="add" class="add">
+          <a href="#"><i class="fas fa-square-plus"></i>Add</a>
+        </label>
+        <label for="notification" class="notification">
+          <a href="#"><i class="fas fa-bell"></i>Notification</a>
+        </label>
+        <label for="profile" class="profile">
+          <a href="#"><i class="fas fa-user"></i>Profile</a>
+        </label>
+
+        <div class="tab"></div>
+      </nav>
+    </div>
+  </body>
+</html>

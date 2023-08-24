@@ -1,0 +1,96 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background: #f2f2f2;
+}
+
+.wrapper {
+  height: 60px;
+  width: 75vw;
+  background: #fff;
+  line-height: 60px;
+  border-radius: 50px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper nav {
+  display: flex;
+  position: relative;
+}
+
+.wrapper nav input {
+  display: none;
+}
+
+.wrapper nav label {
+  width: 100%;
+  flex: 1;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.wrapper nav label a {
+  color: #1d1f20;
+  z-index: -1;
+  position: relative;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.6s ease;
+}
+
+.wrapper nav #home:checked ~ label.home a,
+.wrapper nav #search:checked ~ label.search a,
+.wrapper nav #add:checked ~ label.add a,
+.wrapper nav #notification:checked ~ label.notification a,
+.wrapper nav #profile:checked ~ label.profile a {
+  color: #fff;
+}
+
+.wrapper nav label a i {
+  font-size: 25px;
+  margin: 0 7px;
+}
+
+.wrapper nav .tab {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  background: linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
+  z-index: 0;
+  border-radius: 50px;
+  left: 0;
+  bottom: 0;
+  transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper nav #search:checked ~ .tab {
+  left: 20%;
+}
+
+.wrapper nav #add:checked ~ .tab {
+  left: 40%;
+}
+
+.wrapper nav #notification:checked ~ .tab {
+  left: 60%;
+}
+
+.wrapper nav #profile:checked ~ .tab {
+  left: 80%;
+}
